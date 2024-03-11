@@ -2,11 +2,10 @@ name: build and deploy
 
 on:
   push:
-    branches:
-      - 'main'
-  pull:
-    branches:
-      - 'main'
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
 jobs:
   build:
     runs-on: ubuntu-latest
